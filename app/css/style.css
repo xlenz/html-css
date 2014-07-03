@@ -8,8 +8,8 @@ header .logo {
     order: 1;
 }
 
-header .logo > img {
-
+header .logo > a {
+    content: url(../img/serena_logo.gif);
 }
 
 header .logo > h1 {
@@ -24,23 +24,22 @@ header .search-contact {
     order: 2;
 }
 
-nav.nav-top {
-
-}
-
-nav ul {
-    display: flex;
-    flex-direction: row;
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-nav ul > li {
+nav.nav-top ul {
+    display: flex;
+    flex-direction: row;
+}
+
+nav.nav-top ul > li {
     margin-right: 20px;
 }
 
-nav ul > li:last-child {
+nav.nav-top ul > li:last-child {
     flex: 1 0 auto;
     margin: 0;
     text-align: right;
@@ -56,16 +55,16 @@ nav ul > li:last-child {
 
 @media all and (max-width: 480px) {
 
-    nav ul {
+    nav.nav-top ul {
         flex-flow: column;
         flex-direction: column;
     }
 
-    nav ul > li {
+    nav.nav-top ul > li {
         margin-right: 0;
     }
 
-    nav ul > li:last-child {
+    nav.nav-top ul > li:last-child {
         text-align: left;
     }
 }
