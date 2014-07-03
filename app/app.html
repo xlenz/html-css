@@ -6,6 +6,7 @@
     <title>html css</title>
 
     <!--link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css"-->
+    <link rel="stylesheet" href="css/reset.css"/>
     <link rel="stylesheet" href="css/style.css"/>
 
 </head>
@@ -17,27 +18,27 @@
         <h1>Contacts Manager</h1>
     </div>
     <div class="search-contact">
-        <input type="text" placeholder="search contact here">
+        <input type="text" placeholder="Search contact here">
         <button>Search</button>
     </div>
 </header>
 
-<nav class=nav-top>
+<nav class="tabs">
     <ul>
         <li><a>All</a></li>
-        <li><a>Favourite</a></li>
+        <li class="actve"><a>Favourite</a></li>
         <li><a>My Scrum team</a></li>
         <li><a>Scrum teams</a></li>
         <li><a>Configure</a></li>
     </ul>
 </nav>
 
-<section>
+<section class="tab-content">
     <nav class="nav-favourite">
         <span>Favourite folder</span>
         <ul>
             <li><a href="#">All</a></li>
-            <li><a href="#">Office contacts</a></li>
+            <li class="actve"><a href="#">Office contacts</a></li>
             <li><a href="#">HR</a></li>
             <li><a href="#">QA</a></li>
         </ul>
@@ -52,7 +53,17 @@
         <ul class="contacts list">
             <li>
                 <a href="#">
-                    <img src="" class="photo">
+                    <img src="img/jobs_steve.jpg" class="photo">
+
+                    <div class="credentials">
+                        <span class="name">Jobs Steve</span>
+                        <span class="position">Designer</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/jobs_steve.jpg" class="photo">
 
                     <div class="credentials">
                         <span class="name">Jobs Steve</span>
@@ -63,6 +74,23 @@
         </ul>
     </div>
 </section>
+
+<footer>
+    <span>2012 (c) Serena Contacts Manager</span>
+    <nav>
+        <ul>
+            <li>
+                <a href="#">Terms</a>
+            </li>
+            <li>
+                <a href="#">Licencse</a>
+            </li>
+            <li>
+                <a href="#">Info</a>
+            </li>
+        </ul>
+    </nav>
+</footer>
 
 <!--script src="libs/jquery/dist/jquery.min.js"></script>
 <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script-->
