@@ -48,6 +48,7 @@ nav li.actve {
 nav.tabs {
     background: linear-gradient(to bottom, #646464 0%, #323232 100%);
     color: #eee;
+    margin-bottom: 15px;
 }
 
 nav.tabs ul {
@@ -69,7 +70,6 @@ nav.tabs ul > li:last-child {
 .tab-content {
     display: flex;
     flex-direction: row;
-    margin-top: 10px;
 }
 
 .nav-favourite {
@@ -83,13 +83,100 @@ nav.tabs ul > li:last-child {
     order: 2;
 }
 
-.nav-favourite span {
+.contacts .contacts-header {
     background-color: #eee;
-    display: block;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.contacts .contacts-header-text {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+}
+
+.contacts .contacts-header-text h2 {
+    margin-top: 15px;
+}
+
+.contacts span.icon.folder-red {
+    content: url(../img/folder_red_favorites.png);
+    padding: 3px 12px 7px 12px;
+    margin-top: -4px;
+}
+
+.contacts .contacts-header a:first-child {
+    margin-right: 0;
+}
+
+.contacts .contacts-header a {
+    margin-right: 15px;
+}
+
+.contacts .contacts-header a.action {
+    max-height: 24px;
+    margin-top: 15px;
+}
+
+.contacts .contacts-header a.edit {
+    content: url(../img/edit_small.png);
+}
+
+.contacts .contacts-header a.edit:hover {
+    content: url(../img/edit_small_hover.png);
+}
+
+.contacts .contacts-header a.delete {
+    content: url(../img/delete_small.png);
+}
+
+.contacts .contacts-header a.delete:hover {
+    content: url(../img/delete_small_hover.png);
+}
+
+.nav-favourite .nav-header {
+    display: flex;
+    flex-direction: row;
+    background-color: #eee;
+    padding: 3px 0 6px 0;
+}
+
+.nav-favourite .nav-header-text {
+    font-weight: bold;
+    margin-top: 4px;
+}
+
+.nav-favourite span.icon {
+    padding: 0 10px;
+}
+
+.nav-favourite span.icon.star {
+    content: url(../img/star_small.png);
+}
+
+.nav-favourite span.icon.folder-red-small {
+    content: url(../img/folder_red_favorites_small.png);
 }
 
 .nav-favourite ul {
     background-color: #ccc;
+}
+
+.nav-favourite li {
+    display: flex;
+    flex-direction: row;
+    margin-left: 25px;
+    padding-bottom: 4px;
+}
+
+.nav-favourite li span {
+    margin-bottom: -4px;
+}
+
+.nav-favourite li a {
+    color: #fff;
+    text-decoration: none;
 }
 
 footer {
