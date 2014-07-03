@@ -25,7 +25,7 @@ header .logo {
     order: 1;
 }
 
-header .logo > a {
+header .logo > a:before {
     content: url(../img/serena_logo.gif);
 }
 
@@ -101,9 +101,12 @@ nav.tabs ul > li:last-child {
 }
 
 .contacts span.icon.folder-red {
-    content: url(../img/folder_red_favorites.png);
     padding: 3px 12px 7px 12px;
     margin-top: -4px;
+}
+
+.contacts span.icon.folder-red:before {
+    content: url(../img/folder_red_favorites.png);
 }
 
 .contacts .contacts-header a:first-child {
@@ -115,23 +118,22 @@ nav.tabs ul > li:last-child {
 }
 
 .contacts .contacts-header a.action {
-    max-height: 24px;
     margin-top: 15px;
 }
 
-.contacts .contacts-header a.edit {
+.contacts .contacts-header a.edit:before {
     content: url(../img/edit_small.png);
 }
 
-.contacts .contacts-header a.edit:hover {
+.contacts .contacts-header a.edit:hover:before {
     content: url(../img/edit_small_hover.png);
 }
 
-.contacts .contacts-header a.delete {
+.contacts .contacts-header a.delete:before {
     content: url(../img/delete_small.png);
 }
 
-.contacts .contacts-header a.delete:hover {
+.contacts .contacts-header a.delete:hover:before {
     content: url(../img/delete_small_hover.png);
 }
 
@@ -151,11 +153,11 @@ nav.tabs ul > li:last-child {
     padding: 0 10px;
 }
 
-.nav-favourite span.icon.star {
+.nav-favourite span.icon.star:before {
     content: url(../img/star_small.png);
 }
 
-.nav-favourite span.icon.folder-red-small {
+.nav-favourite span.icon.folder-red-small:before {
     content: url(../img/folder_red_favorites_small.png);
 }
 
