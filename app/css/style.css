@@ -101,16 +101,15 @@ nav.tabs ul > li:last-child {
 }
 
 .contacts .contacts-header-text h2 {
-    margin-top: 15px;
+    margin-top: 5px;
+    padding: 10px 0;
 }
 
 .contacts span.icon.folder-red {
-    padding: 3px 12px 7px 12px;
+    display: block;
+    padding: 0 48px 0 20px;
     margin-top: -4px;
-}
-
-.contacts span.icon.folder-red:before {
-    content: url(../img/folder_red_favorites.png);
+    background: url(../img/folder_red_favorites.png) no-repeat center;
 }
 
 .contacts .contacts-header a:first-child {
@@ -119,33 +118,35 @@ nav.tabs ul > li:last-child {
 
 .contacts .contacts-header a {
     margin-right: 15px;
+    flex: 0 1 24px;
 }
 
 .contacts .contacts-header a.action {
     margin-top: 15px;
+    display: block;
 }
 
-.contacts .contacts-header a.edit:before {
-    content: url(../img/edit_small.png);
+.contacts .contacts-header a.edit {
+    background: url(../img/edit_small.png) no-repeat;
 }
 
-.contacts .contacts-header a.edit:hover:before {
-    content: url(../img/edit_small_hover.png);
+.contacts .contacts-header a.edit:hover {
+    background: url(../img/edit_small_hover.png) no-repeat;
 }
 
-.contacts .contacts-header a.delete:before {
-    content: url(../img/delete_small.png);
+.contacts .contacts-header a.delete {
+    background: url(../img/delete_small.png) no-repeat;
 }
 
-.contacts .contacts-header a.delete:hover:before {
-    content: url(../img/delete_small_hover.png);
+.contacts .contacts-header a.delete:hover {
+    background: url(../img/delete_small_hover.png) no-repeat;
 }
 
 .nav-favourite .nav-header {
     display: flex;
     flex-direction: row;
     background-color: #eee;
-    padding: 3px 0 6px 0;
+    padding: 3px 0 6px 6px;
 }
 
 .nav-favourite .nav-header-text {
@@ -154,15 +155,16 @@ nav.tabs ul > li:last-child {
 }
 
 .nav-favourite span.icon {
-    padding: 0 10px;
+    padding: 4px 15px 2px 15px;
+    display: inline;
 }
 
-.nav-favourite span.icon.star:before {
-    content: url(../img/star_small.png);
+.nav-favourite span.icon.star {
+    background: url(../img/star_small.png) no-repeat;
 }
 
-.nav-favourite span.icon.folder-red-small:before {
-    content: url(../img/folder_red_favorites_small.png);
+.nav-favourite span.icon.folder-red-small {
+    background: url(../img/folder_red_favorites_small.png) no-repeat;
 }
 
 .nav-favourite ul {
@@ -172,8 +174,8 @@ nav.tabs ul > li:last-child {
 .nav-favourite li {
     display: flex;
     flex-direction: row;
-    margin-left: 25px;
-    padding-bottom: 4px;
+    margin-left: 5%;
+    padding: 5px;
 }
 
 .nav-favourite li span {
