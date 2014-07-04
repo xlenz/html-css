@@ -142,6 +142,47 @@ nav.tabs ul > li:last-child {
     background: url(../img/delete_small_hover.png) no-repeat;
 }
 
+ul.contacts-list {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.contacts-list li {
+    width: 170px;
+    height: 200px;
+    border: 5px solid #ddd;
+    background-color: #eee;
+    margin: 0 10px 10px 0;
+}
+
+.contacts-list a {
+    text-decoration: none;
+}
+
+.contacts-list .name {
+    color: #000000;
+    font-weight: bold;
+    display: block;
+}
+
+.contacts-list .name .last-name {
+    text-transform: uppercase;
+    display: block;
+}
+
+.contacts-list .position {
+    font-size: 13px;
+    color: #777;
+}
+
+.contacts-list .credentials {
+    margin: 0 10px;
+}
+
+.contacts-list .credentials {
+    background-color: #eee;
+}
+
 .nav-favourite .nav-header {
     display: flex;
     flex-direction: row;
@@ -224,6 +265,10 @@ footer a {
         flex-flow: column;
         flex-direction: column;
     }
+
+    .nav-favourite span.icon {
+        padding: 0;
+    }
 }
 
 @media all and (max-width: 480px) {
@@ -239,5 +284,25 @@ footer a {
 
     nav.tabs ul > li:last-child {
         text-align: left;
+    }
+
+    .tab-content {
+        flex-flow: column;
+        flex-direction: column;
+    }
+
+    .nav-favourite {
+        flex: 0 0 auto;
+        order: 1;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .contacts .contacts-header {
+        margin-bottom: 5px;
+    }
+
+    .nav-favourite span.icon {
+        padding: 4px 15px 2px 15px;
     }
 }
