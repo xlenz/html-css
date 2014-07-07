@@ -1,6 +1,5 @@
 header {
-    display: flex;
-    flex-direction: row;
+    display: block;
 }
 
 header input {
@@ -21,8 +20,7 @@ header button {
 }
 
 header .logo {
-    flex: 1 0 auto;
-    order: 1;
+    display: inline-block;
 }
 
 header .logo > a:before {
@@ -37,8 +35,10 @@ header .logo > h1 {
 }
 
 header .search-contact {
-    flex: 0 0 auto;
-    order: 2;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 3px;
+    float: right;
 }
 
 nav li.active {
@@ -50,41 +50,48 @@ nav li.active a {
 }
 
 nav.tabs {
+    clear: both;
     background: linear-gradient(to bottom, #646464 0%, #323232 100%);
-    color: #eee;
     margin-bottom: 15px;
 }
 
 nav.tabs ul {
-    font-weight: bold;
-    display: flex;
-    flex-direction: row;
+    display: block;
+}
+
+nav.tabs a {
+    color: #eee;
 }
 
 nav.tabs ul > li {
+    display: inline-block;
     padding: 10px 20px;
 }
 
+nav.tabs ul > li a {
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+}
+
 nav.tabs ul > li:last-child {
-    flex: 1 0 auto;
+    display: inline-block;
     margin: 0;
-    text-align: right;
+    float: right;
 }
 
 .tab-content {
-    display: flex;
-    flex-direction: row;
+    display: block;
 }
 
 .nav-favourite {
-    flex: 0 0 20%;
-    order: 1;
+    display: inline-block;
     margin-right: 20px;
 }
 
 .contacts {
-    flex: 1 1 auto;
-    order: 2;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .contacts .contacts-header {
@@ -289,49 +296,40 @@ footer a {
     color: #990000;
 }
 
-@media all and (max-width: 640px) {
 
-    header {
-        flex-flow: column;
-        flex-direction: column;
-    }
+@media all and (max-width: 670px) {
 
     .nav-favourite span.icon {
         padding: 0;
     }
 
     header .search-contact {
-        margin-bottom: 10px;
+        margin: 2px 0 8px 0;
+        float: none;
     }
 
     nav.tabs ul > li {
-        padding: 10px 9px;
+        padding: 10px 7px;
     }
 }
 
 @media all and (max-width: 480px) {
 
-    nav.tabs ul {
-        flex-flow: column;
-        flex-direction: column;
+    nav.tabs ul > li {
+        padding: 5px 0 5px 10px;
+        display: block;
+        float: none;
     }
 
-    nav.tabs ul > li {
-        margin-right: 0;
+    header .logo > h1 {
+        margin-left: 0;
     }
 
     nav.tabs ul > li:last-child {
-        text-align: left;
-    }
-
-    .tab-content {
-        flex-flow: column;
-        flex-direction: column;
+        float: none;
     }
 
     .nav-favourite {
-        flex: 0 0 auto;
-        order: 1;
         margin-right: 0;
         margin-bottom: 15px;
     }
