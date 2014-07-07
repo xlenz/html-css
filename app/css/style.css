@@ -153,13 +153,19 @@ ul.contacts-list {
     background-color: #eee;
     margin: 0 10px 10px 0;
     display: inline-block;
+    vertical-align: top;
+}
+
+.contacts-list li:hover {
+    border-color: #990000;
 }
 
 .contacts-list a {
     text-decoration: none;
+    color: #000000;
 }
 
-.contacts-list .credentials .name, .last-name, .position {
+.contacts-list .credentials .name, .last-name, .position, .contact-add-label span {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -167,14 +173,11 @@ ul.contacts-list {
 }
 
 .contacts-list .name {
-    color: #000000;
     font-weight: bold;
-    display: block;
 }
 
 .contacts-list .name .last-name {
     text-transform: uppercase;
-    display: block;
 }
 
 .contacts-list .position {
@@ -182,17 +185,32 @@ ul.contacts-list {
     color: #777;
 }
 
-.contacts-list .photo {
-    max-width: 170px;
-    max-height: 130px;
+.contacts-list .photo, .contact-image {
+    width: 170px;
+    height: 130px;
+    background-color: #aaa;
+    display: block;
 }
 
-.contacts-list .credentials {
-    margin: 0 10px;
+.contacts-list .contact-image .contact-image-add {
+    display: block;
+    width: 64px;
+    height: 64px;
+    padding: 65px 53px 0;
+    background: url(../img/add.png) no-repeat center;
 }
 
-.contacts-list .credentials {
-    background-color: #eee;
+.contacts-list .contact-image-add:hover {
+    background: url(../img/add_hover.png) no-repeat center;
+}
+
+.contacts-list .contact-add-label, .credentials {
+    margin: 5px 10px 0;
+
+}
+
+.contacts-list .contact-add-label {
+    text-align: center;
 }
 
 .nav-favourite .nav-header {
