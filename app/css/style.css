@@ -159,6 +159,13 @@ ul.contacts-list {
     text-decoration: none;
 }
 
+.contacts-list .credentials .name, .last-name, .position {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+}
+
 .contacts-list .name {
     color: #000000;
     font-weight: bold;
@@ -173,6 +180,11 @@ ul.contacts-list {
 .contacts-list .position {
     font-size: 13px;
     color: #777;
+}
+
+.contacts-list .photo {
+    max-width: 170px;
+    max-height: 130px;
 }
 
 .contacts-list .credentials {
@@ -272,6 +284,10 @@ footer a {
 
     header .search-contact {
         margin-bottom: 10px;
+    }
+
+    nav.tabs ul > li {
+        padding: 10px 9px;
     }
 }
 
