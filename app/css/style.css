@@ -118,24 +118,28 @@ nav.tabs ul > li:last-child {
 
 .contacts .contacts-header a.action {
     margin: 14px 10px 0 0;
-    padding: 12px 12px;
+    padding: 12px 0;
     float: right;
 }
 
 .contacts .contacts-header a.edit {
-    background: url(../img/edit_small.png) no-repeat;
+    background: url(../img/sprite_delete-edit.png) 0 0 no-repeat;
+    width: 24px;
 }
 
 .contacts .contacts-header a.edit:hover {
-    background: url(../img/edit_small_hover.png) no-repeat;
+    background: url(../img/sprite_delete-edit.png) -24px 0 no-repeat;
+    width: 24px;
 }
 
 .contacts .contacts-header a.delete {
-    background: url(../img/delete_small.png) no-repeat;
+    width: 21px;
+    background: url(../img/sprite_delete-edit.png) -48px 0 no-repeat;
 }
 
 .contacts .contacts-header a.delete:hover {
-    background: url(../img/delete_small_hover.png) no-repeat;
+    width: 21px;
+    background: url(../img/sprite_delete-edit.png) -69px 0 no-repeat;
 }
 
 ul.contacts-list {
