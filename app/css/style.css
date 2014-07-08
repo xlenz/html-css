@@ -85,52 +85,40 @@ nav.tabs ul > li:last-child {
 }
 
 .nav-favourite {
-    display: inline-block;
-    margin-right: 20px;
+    float: left;
 }
 
 .contacts {
-    display: inline-block;
+    display: block;
     vertical-align: top;
+    margin-left: 170px;
+    min-width: 300px;
 }
 
 .contacts .contacts-header {
     background-color: #eee;
     margin-bottom: 15px;
-    display: flex;
-    flex-direction: row;
 }
 
 .contacts .contacts-header-text {
-    display: flex;
-    flex-direction: row;
-    flex: 1 1 auto;
+    display: inline;
 }
 
 .contacts .contacts-header-text h2 {
-    margin-top: 5px;
-    padding: 10px 0;
+    padding: 14px 0 12px;
+    display: inline-block;
 }
 
 .contacts span.icon.folder-red {
-    display: block;
-    padding: 0 48px 0 20px;
-    margin-top: -4px;
+    display: inline;
+    padding: 15px 48px 5px 20px;
     background: url(../img/folder_red_favorites.png) no-repeat center;
 }
 
-.contacts .contacts-header a:first-child {
-    margin-right: 0;
-}
-
-.contacts .contacts-header a {
-    margin-right: 15px;
-    flex: 0 1 24px;
-}
-
 .contacts .contacts-header a.action {
-    margin-top: 15px;
-    display: block;
+    margin: 14px 10px 0 0;
+    padding: 12px 12px;
+    float: right;
 }
 
 .contacts .contacts-header a.edit {
@@ -213,7 +201,7 @@ ul.contacts-list {
 
 .contacts-list .contact-add-label, .credentials {
     margin: 5px 10px 0;
-
+    display: block;
 }
 
 .contacts-list .contact-add-label {
@@ -221,15 +209,12 @@ ul.contacts-list {
 }
 
 .nav-favourite .nav-header {
-    display: flex;
-    flex-direction: row;
     background-color: #eee;
-    padding: 3px 0 6px 6px;
+    padding: 5px 6px 4px;
 }
 
 .nav-favourite .nav-header-text {
     font-weight: bold;
-    margin-top: 4px;
 }
 
 .nav-favourite span.icon {
@@ -250,8 +235,6 @@ ul.contacts-list {
 }
 
 .nav-favourite li {
-    display: flex;
-    flex-direction: row;
     margin-left: 5%;
     padding: 5px;
 }
@@ -263,25 +246,27 @@ ul.contacts-list {
 .nav-favourite li a {
     color: #000;
     text-decoration: none;
+    display: block;
 }
 
 footer {
     margin-top: 20px;
     background-color: #eee;
     padding: 10px 20px;
-    display: flex;
-    flex-direction: row;
     font-size: 13px;
 }
 
 footer > span {
     color: #aaa;
-    flex: 1 1 auto;
+    display: inline;
 }
 
-footer ul {
-    display: flex;
-    flex-direction: row;
+footer nav {
+    float: right;
+}
+
+footer nav, footer ul {
+    display: inline;
 }
 
 footer ul > li:first-child {
@@ -290,12 +275,12 @@ footer ul > li:first-child {
 
 footer ul > li {
     margin-left: 20px;
+    display: inline;
 }
 
 footer a {
     color: #990000;
 }
-
 
 @media all and (max-width: 670px) {
 
@@ -311,9 +296,17 @@ footer a {
     nav.tabs ul > li {
         padding: 10px 7px;
     }
+
+    .contacts {
+        margin-left: 140px;
+    }
 }
 
 @media all and (max-width: 480px) {
+
+    .contacts {
+        margin-left: 0;
+    }
 
     nav.tabs ul > li {
         padding: 5px 0 5px 10px;
@@ -332,6 +325,7 @@ footer a {
     .nav-favourite {
         margin-right: 0;
         margin-bottom: 15px;
+        float: none;
     }
 
     .contacts .contacts-header {
@@ -340,5 +334,13 @@ footer a {
 
     .nav-favourite span.icon {
         padding: 4px 15px 2px 15px;
+    }
+
+    footer nav {
+        float: none;
+    }
+
+    footer ul {
+        display: block;
     }
 }
