@@ -82,6 +82,7 @@ nav.tabs ul > li:last-child {
 
 .tab-content {
     display: block;
+    margin-bottom: 50px;
 }
 
 .nav-favourite {
@@ -250,8 +251,11 @@ ul.contacts-list {
 }
 
 footer {
-    margin-top: 20px;
     background-color: #eee;
+    position: fixed;
+    left: 8px;
+    right: 8px;
+    bottom: 0;
     padding: 10px 20px;
     font-size: 13px;
 }
