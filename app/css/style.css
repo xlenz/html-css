@@ -65,6 +65,7 @@ nav.tabs {
 
 nav.tabs ul {
     display: block;
+    position: relative;
 }
 
 nav.tabs a {
@@ -84,9 +85,10 @@ nav.tabs ul > li a {
 }
 
 nav.tabs ul > li:last-child {
-    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
     margin: 0;
-    float: right;
 }
 
 .tab-content {
@@ -337,7 +339,7 @@ footer a {
     }
 
     nav.tabs ul > li:last-child {
-        float: none;
+        position: static;
     }
 
     .nav-favourite {
