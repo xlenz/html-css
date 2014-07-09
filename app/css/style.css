@@ -43,10 +43,12 @@ header .search-contact {
 
 nav li.active {
     background: linear-gradient(to bottom, #e51920 1%, #a90507 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e51920', endColorstr='#a90507',GradientType=0 );
 }
 
 nav li:not(.active):hover {
     background: linear-gradient(to bottom, #356aa0 0%,#356aa0 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#356aa0', endColorstr='#356aa0',GradientType=0 );
 }
 
 nav li:not(.active):hover a {
@@ -60,6 +62,7 @@ nav li.active a {
 nav.tabs {
     clear: both;
     background: linear-gradient(to bottom, #646464 0%, #323232 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#646464', endColorstr='#323232',GradientType=0 );
     margin-bottom: 15px;
 }
 
